@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class ViewController: UIViewController {
     
@@ -21,6 +22,8 @@ class ViewController: UIViewController {
         
     }
     
+    var moc = DataController().managedObjectContext
+    
     var verificationCode = "123456"
     
     var buttonsArray = [UIButton]()
@@ -29,6 +32,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
     }
+    
+    //MARK: - Button functions
     
     func buttonClicked(sender:UIButton) {
         
@@ -41,7 +46,19 @@ class ViewController: UIViewController {
             sender.setImage(UIImage(named: "unselectedStar"), forState: UIControlState.Normal)
         }
     }
+    
+    func saveClicks() {
+        
+        let button = LatteStar()
+        
+        if let clicks = button.valueForKey("numberOfSelectedStars") as? Int {
+            
+        }
+    }
+    
 
+    //MARK: - Alert set up
+    
     func showAlert() {
         
         let alertController = UIAlertController(title: "Verify", message: "Enter code", preferredStyle: .Alert)
@@ -50,12 +67,12 @@ class ViewController: UIViewController {
             (verifyAction) -> Void in
             
             let textField = alertController.textFields?.first
-            
+                // test for verification
             if textField!.text == self.verificationCode {
                 print("approved")
                 
             } else {
-                
+                // fails authorization, clears selected stars
                 for button in self.buttonsArray {
                     
                     if button.isKindOfClass(UIButton) {
@@ -63,12 +80,7 @@ class ViewController: UIViewController {
                     }
                     self.buttonsArray.removeAll()
                 }
-                
-                
-                
             }
-
-            
         }
         let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel) {
             (alertAction) -> Void in
@@ -81,8 +93,6 @@ class ViewController: UIViewController {
         alertController.addAction(cancelAction)
         
         presentViewController(alertController, animated: true, completion: nil)
-
-
     }
 }
 
