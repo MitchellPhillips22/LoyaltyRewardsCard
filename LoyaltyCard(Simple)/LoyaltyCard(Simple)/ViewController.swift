@@ -11,12 +11,21 @@ import CoreData
 
 class ViewController: UIViewController {
     
-    @IBAction func verifyButton(sender: UIButton) {
+    @IBAction func editButton(sender: UIButton) {
         showAlert()
     }
+    
     @IBAction func selectAction(sender: UIButton) {
         buttonClicked(sender)
     }
+    
+    @IBAction func doneButton(sender: UIButton) {
+        saveDefaults()
+        doneOutlet.hidden = true
+        editOutlet.hidden = false 
+    }
+    @IBOutlet weak var doneOutlet: UIButton!
+    @IBOutlet weak var editOutlet: UIButton!
     
     @IBOutlet var latteButtonCollection: Array<UIButton>?
     
@@ -29,20 +38,39 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        loadDefaults()
+        updateUI()
+        
+        
+    }
+    
+    func updateUI() {
+        
         for button in latteButtonCollection! {
             if button.tag <= stamps {
                 button.selected = true
             }
             button.enabled = false
         }
-        
+
     }
     
     //MARK: - Button functions
     
     func buttonClicked(sender:UIButton) {
         
-        sender.selected = !sender.selected
+        if sender.selected == true {
+            stamps = stamps - 1
+            sender.selected = false
+        } else {
+            stamps = stamps + 1
+            sender.selected = true
+        }
+        
+        
+   
+        
+        print("stamps equals \(stamps)")
 
     }
 
@@ -64,11 +92,11 @@ class ViewController: UIViewController {
                     
                   button.enabled = true
                     
+                    self.doneOutlet.hidden = false
+                    self.editOutlet.hidden = true
                 }
-
             } else {
                 // fails authorization
-              
             }
         }
         let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel) {
@@ -82,6 +110,24 @@ class ViewController: UIViewController {
         alertController.addAction(cancelAction)
         
         presentViewController(alertController, animated: true, completion: nil)
+    }
+    
+    func saveDefaults() {
+        print("saved")
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let number = NSNumber(integer: self.stamps)
+        defaults.setValue(number, forKey: "stampsNumber")
+        defaults.synchronize()
+        
+    }
+    
+    func loadDefaults() {
+        let defaults = NSUserDefaults.standardUserDefaults()
+        if let value = defaults.valueForKey("stampsNumber") as? NSNumber {
+            self.stamps = value.integerValue
+        }
+        print("loaded stamps \(stamps)")
+        
     }
 }
 

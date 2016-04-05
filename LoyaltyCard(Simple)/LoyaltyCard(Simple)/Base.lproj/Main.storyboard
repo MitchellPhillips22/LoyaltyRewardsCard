@@ -144,6 +144,14 @@
                                     <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Igj-dm-cyz"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sqc-Zu-e7M">
+                                <rect key="frame" x="318" y="485" width="50" height="50"/>
+                                <state key="normal" image="unselectedStar"/>
+                                <state key="selected" image="selectedStar"/>
+                                <connections>
+                                    <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B51-8u-79c"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YLF-nn-IXm">
                                 <rect key="frame" x="371" y="485" width="50" height="50"/>
                                 <state key="normal" image="unselectedStar"/>
@@ -174,29 +182,6 @@
                                 <state key="selected" image="selectedStar"/>
                                 <connections>
                                     <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YcP-D5-i5t"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6P-Qs-4tX">
-                                <rect key="frame" x="275" y="420" width="50" height="30"/>
-                                <state key="normal" title="VERIFY"/>
-                                <connections>
-                                    <action selector="verifyButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yNN-6K-dlH"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fM3-gQ-utT">
-                                <rect key="frame" x="20" y="485" width="50" height="50"/>
-                                <state key="normal" image="unselectedStar"/>
-                                <state key="selected" image="selectedStar"/>
-                                <connections>
-                                    <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Il-2f-4x2"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sqc-Zu-e7M">
-                                <rect key="frame" x="318" y="485" width="50" height="50"/>
-                                <state key="normal" image="unselectedStar"/>
-                                <state key="selected" image="selectedStar"/>
-                                <connections>
-                                    <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B51-8u-79c"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ia7-Xw-0wX">
@@ -279,6 +264,28 @@
                                     <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ofp-dY-Rn9"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fM3-gQ-utT">
+                                <rect key="frame" x="20" y="485" width="50" height="50"/>
+                                <state key="normal" image="unselectedStar"/>
+                                <state key="selected" image="selectedStar"/>
+                                <connections>
+                                    <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Il-2f-4x2"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyn-le-ZbA">
+                                <rect key="frame" x="279" y="452" width="42" height="30"/>
+                                <state key="normal" title="DONE"/>
+                                <connections>
+                                    <action selector="doneButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="do7-3C-Ewg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6P-Qs-4tX">
+                                <rect key="frame" x="284" y="420" width="33" height="30"/>
+                                <state key="normal" title="EDIT"/>
+                                <connections>
+                                    <action selector="editButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8CB-Gu-rsn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -306,6 +313,7 @@
                             <constraint firstItem="aXy-a3-FkQ" firstAttribute="top" secondItem="9C9-tH-4Mk" secondAttribute="bottom" constant="3" id="Ie3-fu-V05"/>
                             <constraint firstItem="8JL-P2-lno" firstAttribute="top" secondItem="0fn-kc-Ibw" secondAttribute="bottom" constant="3" id="LSj-DO-uDO"/>
                             <constraint firstItem="qzn-4u-q02" firstAttribute="leading" secondItem="pqi-QB-wyX" secondAttribute="trailing" constant="3" id="Lxj-kz-JgE"/>
+                            <constraint firstItem="cyn-le-ZbA" firstAttribute="top" secondItem="t6P-Qs-4tX" secondAttribute="bottom" constant="2" id="MOC-6G-oSC"/>
                             <constraint firstItem="8Dd-dG-iCI" firstAttribute="top" secondItem="YKV-Pa-KlS" secondAttribute="bottom" constant="3" id="MQk-8e-051"/>
                             <constraint firstItem="8pA-yz-xWe" firstAttribute="top" secondItem="k0S-8Y-lrW" secondAttribute="bottom" constant="3" id="MTs-y8-OEm"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fM3-gQ-utT" secondAttribute="bottom" constant="65" id="MVk-wj-bJT"/>
@@ -356,6 +364,7 @@
                             <constraint firstItem="YLF-nn-IXm" firstAttribute="top" secondItem="Ia7-Xw-0wX" secondAttribute="bottom" constant="3" id="sVT-mb-ltO"/>
                             <constraint firstItem="bKF-Gr-3Oy" firstAttribute="top" secondItem="Mrl-1H-Ok9" secondAttribute="bottom" constant="3" id="se8-6J-SHx"/>
                             <constraint firstItem="qzn-4u-q02" firstAttribute="top" secondItem="bKF-Gr-3Oy" secondAttribute="bottom" constant="3" id="suC-WD-jWG"/>
+                            <constraint firstItem="cyn-le-ZbA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uaM-EY-eEZ"/>
                             <constraint firstItem="PAT-GA-hEa" firstAttribute="top" secondItem="pX9-NE-ZKV" secondAttribute="bottom" constant="3" id="vS9-wE-rRg"/>
                             <constraint firstAttribute="bottom" secondItem="t6P-Qs-4tX" secondAttribute="bottom" constant="150" id="wTl-ZZ-rbP"/>
                             <constraint firstItem="PAT-GA-hEa" firstAttribute="leading" secondItem="2fR-eQ-SDS" secondAttribute="trailing" constant="3" id="xIw-AE-RIM"/>
@@ -367,6 +376,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="doneOutlet" destination="cyn-le-ZbA" id="3WP-qS-OLd"/>
+                        <outlet property="editOutlet" destination="t6P-Qs-4tX" id="7bt-6N-Cpd"/>
                         <outletCollection property="latteButtonCollection" destination="PAT-GA-hEa" collectionClass="NSMutableArray" id="dDI-f0-lof"/>
                         <outletCollection property="latteButtonCollection" destination="0fn-kc-Ibw" collectionClass="NSMutableArray" id="R9E-YB-WNH"/>
                         <outletCollection property="latteButtonCollection" destination="pX9-NE-ZKV" collectionClass="NSMutableArray" id="Mc2-Bh-iCY"/>
