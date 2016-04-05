@@ -276,14 +276,21 @@
                                 <rect key="frame" x="279" y="452" width="42" height="30"/>
                                 <state key="normal" title="DONE"/>
                                 <connections>
-                                    <action selector="doneButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="do7-3C-Ewg"/>
+                                    <action selector="doneTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8WO-TN-g0Y"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1t-aP-DDB">
+                                <rect key="frame" x="120.5" y="550" width="61" height="30"/>
+                                <state key="normal" title="Redeem!"/>
+                                <connections>
+                                    <action selector="redeemTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9an-wn-nL0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6P-Qs-4tX">
                                 <rect key="frame" x="284" y="420" width="33" height="30"/>
                                 <state key="normal" title="EDIT"/>
                                 <connections>
-                                    <action selector="editButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8CB-Gu-rsn"/>
+                                    <action selector="editTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qoc-8L-iZB"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -296,6 +303,7 @@
                             <constraint firstAttribute="trailing" secondItem="k7s-hF-8Bu" secondAttribute="trailing" constant="126" id="1E5-g4-RBn"/>
                             <constraint firstItem="pqi-QB-wyX" firstAttribute="leading" secondItem="cv0-Rl-EgT" secondAttribute="trailing" constant="3" id="29d-Zl-T4i"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8pA-yz-xWe" secondAttribute="bottom" constant="65" id="3vM-iL-t7P"/>
+                            <constraint firstItem="h1t-aP-DDB" firstAttribute="top" secondItem="aXy-a3-FkQ" secondAttribute="bottom" constant="15" id="4ce-84-wYF"/>
                             <constraint firstItem="fVu-RL-aJu" firstAttribute="leading" secondItem="k0S-8Y-lrW" secondAttribute="trailing" constant="3" id="50y-dO-clt"/>
                             <constraint firstItem="Mrl-1H-Ok9" firstAttribute="leading" secondItem="8Dd-dG-iCI" secondAttribute="trailing" constant="3" id="5Ia-li-Slv"/>
                             <constraint firstItem="8Dd-dG-iCI" firstAttribute="top" secondItem="YKV-Pa-KlS" secondAttribute="bottom" constant="3" id="5Og-Bh-37j"/>
@@ -347,6 +355,7 @@
                             <constraint firstItem="YLF-nn-IXm" firstAttribute="top" secondItem="Ia7-Xw-0wX" secondAttribute="bottom" constant="3" id="fq9-Gh-Yii"/>
                             <constraint firstAttribute="trailing" secondItem="bKF-Gr-3Oy" secondAttribute="trailing" constant="47" id="g00-vL-43p"/>
                             <constraint firstItem="lvN-pw-XKD" firstAttribute="leading" secondItem="PAT-GA-hEa" secondAttribute="trailing" constant="3" id="g1B-dx-Vwh"/>
+                            <constraint firstItem="h1t-aP-DDB" firstAttribute="centerX" secondItem="aXy-a3-FkQ" secondAttribute="centerX" id="hZI-Ax-SvG"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="aXy-a3-FkQ" secondAttribute="bottom" constant="65" id="iaD-DI-40P"/>
                             <constraint firstItem="cv0-Rl-EgT" firstAttribute="top" secondItem="TCC-DN-aXG" secondAttribute="bottom" constant="3" id="j5w-oU-PoZ"/>
                             <constraint firstItem="bKF-Gr-3Oy" firstAttribute="leading" secondItem="8Bg-BP-QgK" secondAttribute="trailing" constant="3" id="jD2-3N-8Ml"/>
@@ -378,6 +387,7 @@
                     <connections>
                         <outlet property="doneOutlet" destination="cyn-le-ZbA" id="3WP-qS-OLd"/>
                         <outlet property="editOutlet" destination="t6P-Qs-4tX" id="7bt-6N-Cpd"/>
+                        <outlet property="redeemOutlet" destination="h1t-aP-DDB" id="gTr-A5-F8r"/>
                         <outletCollection property="latteButtonCollection" destination="PAT-GA-hEa" collectionClass="NSMutableArray" id="dDI-f0-lof"/>
                         <outletCollection property="latteButtonCollection" destination="0fn-kc-Ibw" collectionClass="NSMutableArray" id="R9E-YB-WNH"/>
                         <outletCollection property="latteButtonCollection" destination="pX9-NE-ZKV" collectionClass="NSMutableArray" id="Mc2-Bh-iCY"/>

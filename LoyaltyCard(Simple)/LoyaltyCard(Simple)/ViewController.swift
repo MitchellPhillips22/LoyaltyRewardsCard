@@ -11,27 +11,36 @@ import CoreData
 
 class ViewController: UIViewController {
     
-    @IBAction func editButton(sender: UIButton) {
+    @IBAction func editTapped(sender: UIButton) {
         showAlert()
+        checkForRedeemable()
     }
     
     @IBAction func selectAction(sender: UIButton) {
-        buttonClicked(sender)
+        buttonTapped(sender)
     }
     
-    @IBAction func doneButton(sender: UIButton) {
+    @IBAction func doneTapped(sender: UIButton) {
         saveDefaults()
         doneOutlet.hidden = true
-        editOutlet.hidden = false 
+        editOutlet.hidden = false
+        updateUI()
     }
+
+    @IBAction func redeemTapped(sender: UIButton) {
+        stamps = 0
+        updateUI()
+    }
+    
     @IBOutlet weak var doneOutlet: UIButton!
     @IBOutlet weak var editOutlet: UIButton!
+    @IBOutlet weak var redeemOutlet: UIButton!
     
     @IBOutlet var latteButtonCollection: Array<UIButton>?
     
     @IBOutlet var coffeeButtonCollection: Array<UIButton>?
     
-    var verificationCode = "123456"
+    var verificationCode = "4444"
  
     var stamps = 0
     
@@ -39,25 +48,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         loadDefaults()
+        checkForRedeemable()
         updateUI()
         
-        
-    }
-    
-    func updateUI() {
-        
-        for button in latteButtonCollection! {
-            if button.tag <= stamps {
-                button.selected = true
-            }
-            button.enabled = false
-        }
-
     }
     
     //MARK: - Button functions
     
-    func buttonClicked(sender:UIButton) {
+    func buttonTapped(sender:UIButton) {
         
         if sender.selected == true {
             stamps = stamps - 1
@@ -67,8 +65,7 @@ class ViewController: UIViewController {
             sender.selected = true
         }
         
-        
-   
+        checkForRedeemable()
         
         print("stamps equals \(stamps)")
 
@@ -87,13 +84,16 @@ class ViewController: UIViewController {
                 // test for verification
             if textField!.text == self.verificationCode {
                 print("approved")
-       
+                self.stamps = 0
+                self.loadDefaults()
+                self.updateUI()
+                
                 for button in self.latteButtonCollection! {
                     
                   button.enabled = true
-                    
-                    self.doneOutlet.hidden = false
-                    self.editOutlet.hidden = true
+                  self.doneOutlet.hidden = false
+                  self.editOutlet.hidden = true
+                
                 }
             } else {
                 // fails authorization
@@ -111,7 +111,30 @@ class ViewController: UIViewController {
         
         presentViewController(alertController, animated: true, completion: nil)
     }
+    //MARK: - UI interaction functions
+    func checkForRedeemable() {
+        
+        if self.stamps == 15 {
+            self.redeemOutlet.hidden = false
+        } else {
+            self.redeemOutlet.hidden = true
+        }
+    }
     
+    func updateUI() {
+    
+        for button in latteButtonCollection! {
+            button.selected = false
+            
+            if button.tag <= stamps {
+                button.selected = true
+            }
+            button.enabled = false
+        }
+        
+    }
+    
+    //MARK: - NSUserDefaults functions
     func saveDefaults() {
         print("saved")
         let defaults = NSUserDefaults.standardUserDefaults()
