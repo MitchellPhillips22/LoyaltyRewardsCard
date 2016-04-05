@@ -149,7 +149,7 @@
                                 <state key="normal" image="unselectedStar"/>
                                 <state key="selected" image="selectedStar"/>
                                 <connections>
-                                    <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B51-8u-79c"/>
+                                    <action selector="coffeeSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PbK-It-wsV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YLF-nn-IXm">
@@ -157,7 +157,7 @@
                                 <state key="normal" image="unselectedStar"/>
                                 <state key="selected" image="selectedStar"/>
                                 <connections>
-                                    <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="huu-P2-T5L"/>
+                                    <action selector="coffeeSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zLM-hv-ixC"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cv0-Rl-EgT">
@@ -165,7 +165,7 @@
                                 <state key="normal" image="unselectedStar"/>
                                 <state key="selected" image="selectedStar"/>
                                 <connections>
-                                    <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vsx-Fr-7EL"/>
+                                    <action selector="coffeeSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3s6-ZV-7Iq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pqi-QB-wyX">
@@ -173,7 +173,7 @@
                                 <state key="normal" image="unselectedStar"/>
                                 <state key="selected" image="selectedStar"/>
                                 <connections>
-                                    <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mey-Op-W1K"/>
+                                    <action selector="coffeeSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6nt-q1-AhU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qzn-4u-q02">
@@ -181,7 +181,7 @@
                                 <state key="normal" image="unselectedStar"/>
                                 <state key="selected" image="selectedStar"/>
                                 <connections>
-                                    <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YcP-D5-i5t"/>
+                                    <action selector="coffeeSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UiQ-6d-pqM"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ia7-Xw-0wX">
@@ -189,7 +189,7 @@
                                 <state key="normal" image="unselectedStar"/>
                                 <state key="selected" image="selectedStar"/>
                                 <connections>
-                                    <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="emZ-P2-Yk0"/>
+                                    <action selector="coffeeSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dcC-mW-BBV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TCC-DN-aXG">
@@ -197,7 +197,7 @@
                                 <state key="normal" image="unselectedStar"/>
                                 <state key="selected" image="selectedStar"/>
                                 <connections>
-                                    <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lqr-fO-H58"/>
+                                    <action selector="coffeeSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5AB-0S-VEI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Bg-BP-QgK">
@@ -205,7 +205,7 @@
                                 <state key="normal" image="unselectedStar"/>
                                 <state key="selected" image="selectedStar"/>
                                 <connections>
-                                    <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hbV-Bp-hIa"/>
+                                    <action selector="coffeeSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PT3-S6-Di0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKF-Gr-3Oy">
@@ -213,7 +213,7 @@
                                 <state key="normal" image="unselectedStar"/>
                                 <state key="selected" image="selectedStar"/>
                                 <connections>
-                                    <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x8p-SS-App"/>
+                                    <action selector="coffeeSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FD8-ir-tUK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CkH-aP-ZEP">
@@ -221,7 +221,7 @@
                                 <state key="normal" image="unselectedStar"/>
                                 <state key="selected" image="selectedStar"/>
                                 <connections>
-                                    <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oeI-qQ-wfV"/>
+                                    <action selector="coffeeSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gFM-0E-dO4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Dd-dG-iCI">
@@ -229,7 +229,7 @@
                                 <state key="normal" image="unselectedStar"/>
                                 <state key="selected" image="selectedStar"/>
                                 <connections>
-                                    <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b0D-GJ-58B"/>
+                                    <action selector="coffeeSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xvU-A6-jbV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mrl-1H-Ok9">
@@ -237,7 +237,7 @@
                                 <state key="normal" image="unselectedStar"/>
                                 <state key="selected" image="selectedStar"/>
                                 <connections>
-                                    <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WLx-zk-0Ao"/>
+                                    <action selector="coffeeSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rt7-Rf-fo5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YKV-Pa-KlS">
@@ -245,7 +245,7 @@
                                 <state key="normal" image="unselectedStar"/>
                                 <state key="selected" image="selectedStar"/>
                                 <connections>
-                                    <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dVD-Ya-gfJ"/>
+                                    <action selector="coffeeSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4DH-r8-0cA"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lBW-pB-1DC">
@@ -253,7 +253,7 @@
                                 <state key="normal" image="unselectedStar"/>
                                 <state key="selected" image="selectedStar"/>
                                 <connections>
-                                    <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5om-BE-yxm"/>
+                                    <action selector="coffeeSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0fY-Ha-I2N"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k7s-hF-8Bu">
@@ -261,7 +261,14 @@
                                 <state key="normal" image="unselectedStar"/>
                                 <state key="selected" image="selectedStar"/>
                                 <connections>
-                                    <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ofp-dY-Rn9"/>
+                                    <action selector="coffeeSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iK2-kk-ky9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6P-Qs-4tX">
+                                <rect key="frame" x="284" y="420" width="33" height="30"/>
+                                <state key="normal" title="EDIT"/>
+                                <connections>
+                                    <action selector="editTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qoc-8L-iZB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fM3-gQ-utT">
@@ -280,17 +287,17 @@
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1t-aP-DDB">
-                                <rect key="frame" x="120.5" y="550" width="61" height="30"/>
+                                <rect key="frame" x="120" y="550" width="61" height="30"/>
                                 <state key="normal" title="Redeem!"/>
                                 <connections>
                                     <action selector="redeemTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9an-wn-nL0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6P-Qs-4tX">
-                                <rect key="frame" x="284" y="420" width="33" height="30"/>
-                                <state key="normal" title="EDIT"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ywF-h2-Hrk">
+                                <rect key="frame" x="418.5" y="550" width="61" height="30"/>
+                                <state key="normal" title="Redeem!"/>
                                 <connections>
-                                    <action selector="editTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qoc-8L-iZB"/>
+                                    <action selector="redeemCoffeeTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eQn-Cc-SZE"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -299,6 +306,7 @@
                             <constraint firstItem="8Bg-BP-QgK" firstAttribute="top" secondItem="8Dd-dG-iCI" secondAttribute="bottom" constant="3" id="063-W3-gDy"/>
                             <constraint firstItem="2fR-eQ-SDS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="73" id="0Aa-EI-3Hp"/>
                             <constraint firstItem="cv0-Rl-EgT" firstAttribute="leading" secondItem="YLF-nn-IXm" secondAttribute="trailing" constant="3" id="0HF-J7-gFb"/>
+                            <constraint firstItem="ywF-h2-Hrk" firstAttribute="centerX" secondItem="cv0-Rl-EgT" secondAttribute="centerX" id="0x0-16-opf"/>
                             <constraint firstItem="8Dd-dG-iCI" firstAttribute="leading" secondItem="CkH-aP-ZEP" secondAttribute="trailing" constant="3" id="12l-7m-T2i"/>
                             <constraint firstAttribute="trailing" secondItem="k7s-hF-8Bu" secondAttribute="trailing" constant="126" id="1E5-g4-RBn"/>
                             <constraint firstItem="pqi-QB-wyX" firstAttribute="leading" secondItem="cv0-Rl-EgT" secondAttribute="trailing" constant="3" id="29d-Zl-T4i"/>
@@ -347,6 +355,7 @@
                             <constraint firstItem="8JL-P2-lno" firstAttribute="leading" secondItem="pX9-NE-ZKV" secondAttribute="trailing" constant="3" id="cmg-6e-ZSi"/>
                             <constraint firstItem="xAs-1h-r2D" firstAttribute="leading" secondItem="8pA-yz-xWe" secondAttribute="trailing" constant="3" id="csz-5t-koF"/>
                             <constraint firstItem="t6P-Qs-4tX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dS5-2q-Smj"/>
+                            <constraint firstItem="ywF-h2-Hrk" firstAttribute="top" secondItem="cv0-Rl-EgT" secondAttribute="bottom" constant="15" id="eb6-zJ-fhW"/>
                             <constraint firstItem="qzn-4u-q02" firstAttribute="top" secondItem="bKF-Gr-3Oy" secondAttribute="bottom" constant="3" id="erC-Xa-lQz"/>
                             <constraint firstItem="Sqp-Ph-AaW" firstAttribute="leading" secondItem="fM3-gQ-utT" secondAttribute="trailing" constant="3" id="fPG-Ly-MHX"/>
                             <constraint firstItem="Mrl-1H-Ok9" firstAttribute="leading" secondItem="8Dd-dG-iCI" secondAttribute="trailing" constant="3" id="faK-Rd-ksn"/>
@@ -387,6 +396,7 @@
                     <connections>
                         <outlet property="doneOutlet" destination="cyn-le-ZbA" id="3WP-qS-OLd"/>
                         <outlet property="editOutlet" destination="t6P-Qs-4tX" id="7bt-6N-Cpd"/>
+                        <outlet property="redeemCoffee" destination="ywF-h2-Hrk" id="Vpe-po-Eov"/>
                         <outlet property="redeemOutlet" destination="h1t-aP-DDB" id="gTr-A5-F8r"/>
                         <outletCollection property="latteButtonCollection" destination="PAT-GA-hEa" collectionClass="NSMutableArray" id="dDI-f0-lof"/>
                         <outletCollection property="latteButtonCollection" destination="0fn-kc-Ibw" collectionClass="NSMutableArray" id="R9E-YB-WNH"/>
