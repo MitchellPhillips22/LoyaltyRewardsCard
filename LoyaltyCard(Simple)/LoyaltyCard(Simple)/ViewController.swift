@@ -12,24 +12,29 @@ import CoreData
 class ViewController: UIViewController {
     
     @IBAction func verifyButton(sender: UIButton) {
-        
         showAlert()
-        
     }
     @IBAction func selectAction(sender: UIButton) {
-        
         buttonClicked(sender)
-        
     }
     
-    var moc = DataController().managedObjectContext
+    @IBOutlet var latteButtonCollection: Array<UIButton>?
+    
+    @IBOutlet var coffeeButtonCollection: Array<UIButton>?
     
     var verificationCode = "123456"
-    
-    var buttonsArray = [UIButton]()
+ 
+    var stamps = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        for button in latteButtonCollection! {
+            if button.tag <= stamps {
+                button.selected = true
+            }
+            button.enabled = false
+        }
         
     }
     
@@ -38,48 +43,32 @@ class ViewController: UIViewController {
     func buttonClicked(sender:UIButton) {
         
         sender.selected = !sender.selected
-        if sender.selected == true {
-            sender.setImage(UIImage(named: "selectedStar"), forState: UIControlState.Selected)
-            buttonsArray.append(sender)
-            print(buttonsArray.count)
-        } else {
-            sender.setImage(UIImage(named: "unselectedStar"), forState: UIControlState.Normal)
-        }
+
     }
-    
-    func saveClicks() {
-        
-        let button = LatteStar()
-        
-        if let clicks = button.valueForKey("numberOfSelectedStars") as? Int {
-            
-        }
-    }
-    
 
     //MARK: - Alert set up
     
     func showAlert() {
         
-        let alertController = UIAlertController(title: "Verify", message: "Enter code", preferredStyle: .Alert)
+        let alertController = UIAlertController(title: "Edit", message: "Enter code", preferredStyle: .Alert)
         
-        let verifyAction = UIAlertAction(title: "Verify", style: .Default) {
+        let verifyAction = UIAlertAction(title: "Edit", style: .Default) {
             (verifyAction) -> Void in
             
             let textField = alertController.textFields?.first
                 // test for verification
             if textField!.text == self.verificationCode {
                 print("approved")
-                
-            } else {
-                // fails authorization, clears selected stars
-                for button in self.buttonsArray {
+       
+                for button in self.latteButtonCollection! {
                     
-                    if button.isKindOfClass(UIButton) {
-                        button.selected = false
-                    }
-                    self.buttonsArray.removeAll()
+                  button.enabled = true
+                    
                 }
+
+            } else {
+                // fails authorization
+              
             }
         }
         let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel) {

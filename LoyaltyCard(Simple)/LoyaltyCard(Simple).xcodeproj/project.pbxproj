@@ -13,12 +13,6 @@
 		1BE92E061CB1C121009284A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BE92E051CB1C121009284A0 /* Assets.xcassets */; };
 		1BE92E091CB1C121009284A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BE92E071CB1C121009284A0 /* LaunchScreen.storyboard */; };
 		1BE92E111CB2CEC0009284A0 /* SignPainter-HouseScript.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BE92E101CB2CEC0009284A0 /* SignPainter-HouseScript.ttf */; };
-		1BE92E131CB30B8A009284A0 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE92E121CB30B8A009284A0 /* DataController.swift */; };
-		1BE92E161CB30C49009284A0 /* Stars.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1BE92E141CB30C49009284A0 /* Stars.xcdatamodeld */; };
-		1BE92E241CB33402009284A0 /* LatteStar+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE92E201CB33402009284A0 /* LatteStar+CoreDataProperties.swift */; };
-		1BE92E251CB33402009284A0 /* LatteStar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE92E211CB33402009284A0 /* LatteStar.swift */; };
-		1BE92E261CB33402009284A0 /* CoffeeStar+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE92E221CB33402009284A0 /* CoffeeStar+CoreDataProperties.swift */; };
-		1BE92E271CB33402009284A0 /* CoffeeStar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE92E231CB33402009284A0 /* CoffeeStar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,12 +24,6 @@
 		1BE92E081CB1C121009284A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BE92E0A1CB1C121009284A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BE92E101CB2CEC0009284A0 /* SignPainter-HouseScript.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SignPainter-HouseScript.ttf"; sourceTree = "<group>"; };
-		1BE92E121CB30B8A009284A0 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
-		1BE92E151CB30C49009284A0 /* Stars.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Stars.xcdatamodel; sourceTree = "<group>"; };
-		1BE92E201CB33402009284A0 /* LatteStar+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "LatteStar+CoreDataProperties.swift"; path = "../LatteStar+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		1BE92E211CB33402009284A0 /* LatteStar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LatteStar.swift; path = ../LatteStar.swift; sourceTree = "<group>"; };
-		1BE92E221CB33402009284A0 /* CoffeeStar+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CoffeeStar+CoreDataProperties.swift"; path = "../CoffeeStar+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		1BE92E231CB33402009284A0 /* CoffeeStar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoffeeStar.swift; path = ../CoffeeStar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,12 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				1BE92DFE1CB1C121009284A0 /* AppDelegate.swift */,
-				1BE92E201CB33402009284A0 /* LatteStar+CoreDataProperties.swift */,
-				1BE92E211CB33402009284A0 /* LatteStar.swift */,
-				1BE92E221CB33402009284A0 /* CoffeeStar+CoreDataProperties.swift */,
-				1BE92E231CB33402009284A0 /* CoffeeStar.swift */,
 				1BE92E1F1CB32FE8009284A0 /* Controllers */,
-				1BE92E141CB30C49009284A0 /* Stars.xcdatamodeld */,
 				1BE92E021CB1C121009284A0 /* Main.storyboard */,
 				1BE92E051CB1C121009284A0 /* Assets.xcassets */,
 				1BE92E071CB1C121009284A0 /* LaunchScreen.storyboard */,
@@ -88,7 +71,6 @@
 			isa = PBXGroup;
 			children = (
 				1BE92E001CB1C121009284A0 /* ViewController.swift */,
-				1BE92E121CB30B8A009284A0 /* DataController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -165,14 +147,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BE92E251CB33402009284A0 /* LatteStar.swift in Sources */,
 				1BE92E011CB1C121009284A0 /* ViewController.swift in Sources */,
-				1BE92E131CB30B8A009284A0 /* DataController.swift in Sources */,
-				1BE92E241CB33402009284A0 /* LatteStar+CoreDataProperties.swift in Sources */,
 				1BE92DFF1CB1C121009284A0 /* AppDelegate.swift in Sources */,
-				1BE92E271CB33402009284A0 /* CoffeeStar.swift in Sources */,
-				1BE92E161CB30C49009284A0 /* Stars.xcdatamodeld in Sources */,
-				1BE92E261CB33402009284A0 /* CoffeeStar+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,19 +301,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		1BE92E141CB30C49009284A0 /* Stars.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				1BE92E151CB30C49009284A0 /* Stars.xcdatamodel */,
-			);
-			currentVersion = 1BE92E151CB30C49009284A0 /* Stars.xcdatamodel */;
-			path = Stars.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 1BE92DF31CB1C120009284A0 /* Project object */;
 }

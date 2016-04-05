@@ -17,63 +17,71 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sqp-Ph-AaW">
+                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sqp-Ph-AaW">
                                 <rect key="frame" x="73" y="485" width="50" height="50"/>
                                 <state key="normal" image="unselectedStar"/>
+                                <state key="selected" image="selectedStar"/>
                                 <connections>
                                     <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cqc-8g-bb4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXy-a3-FkQ">
+                            <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXy-a3-FkQ">
                                 <rect key="frame" x="126" y="485" width="50" height="50"/>
                                 <state key="normal" image="unselectedStar"/>
+                                <state key="selected" image="selectedStar"/>
                                 <connections>
                                     <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Er2-Lq-nsc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8pA-yz-xWe">
+                            <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8pA-yz-xWe">
                                 <rect key="frame" x="179" y="485" width="50" height="50"/>
                                 <state key="normal" image="unselectedStar"/>
+                                <state key="selected" image="selectedStar"/>
                                 <connections>
                                     <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gHv-6C-kwp"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAs-1h-r2D">
+                            <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAs-1h-r2D">
                                 <rect key="frame" x="232" y="485" width="50" height="50"/>
                                 <state key="normal" image="unselectedStar"/>
+                                <state key="selected" image="selectedStar"/>
                                 <connections>
                                     <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xGK-y9-2WU"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZKU-Da-DOF">
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZKU-Da-DOF">
                                 <rect key="frame" x="46" y="432" width="50" height="50"/>
                                 <state key="normal" image="unselectedStar"/>
+                                <state key="selected" image="selectedStar"/>
                                 <connections>
                                     <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hnc-01-elE"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9C9-tH-4Mk">
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9C9-tH-4Mk">
                                 <rect key="frame" x="99" y="432" width="50" height="50"/>
                                 <state key="normal" image="unselectedStar"/>
+                                <state key="selected" image="selectedStar"/>
                                 <connections>
                                     <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VcT-RJ-iDU"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k0S-8Y-lrW">
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k0S-8Y-lrW">
                                 <rect key="frame" x="152" y="432" width="50" height="50"/>
                                 <state key="normal" image="unselectedStar"/>
+                                <state key="selected" image="selectedStar"/>
                                 <connections>
                                     <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YVs-QO-DS9"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fVu-RL-aJu">
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fVu-RL-aJu">
                                 <rect key="frame" x="205" y="432" width="50" height="50"/>
                                 <state key="normal" image="unselectedStar"/>
+                                <state key="selected" image="selectedStar"/>
                                 <connections>
                                     <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="srG-DK-Itj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fR-eQ-SDS">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fR-eQ-SDS">
                                 <rect key="frame" x="73" y="379" width="50" height="50"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" selected="YES"/>
@@ -84,7 +92,7 @@
                                     <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qBc-cf-TrO"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAT-GA-hEa">
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAT-GA-hEa">
                                 <rect key="frame" x="126" y="379" width="50" height="50"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" selected="YES"/>
@@ -95,7 +103,7 @@
                                     <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IKP-Qb-1hH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lvN-pw-XKD">
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lvN-pw-XKD">
                                 <rect key="frame" x="179" y="379" width="50" height="50"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" selected="YES"/>
@@ -106,7 +114,7 @@
                                     <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kRZ-ia-pkN"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pX9-NE-ZKV">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pX9-NE-ZKV">
                                 <rect key="frame" x="99" y="326" width="50" height="50"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" selected="YES"/>
@@ -117,7 +125,7 @@
                                     <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HeI-ZX-biF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8JL-P2-lno">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8JL-P2-lno">
                                 <rect key="frame" x="152" y="326" width="50" height="50"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" selected="YES"/>
@@ -128,120 +136,44 @@
                                     <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VmU-KI-jaG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fn-kc-Ibw">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fn-kc-Ibw">
                                 <rect key="frame" x="126" y="273" width="50" height="50"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" button="YES" selected="YES"/>
-                                </accessibility>
                                 <state key="normal" image="unselectedStar"/>
                                 <state key="selected" image="selectedStar"/>
                                 <connections>
                                     <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Igj-dm-cyz"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sqc-Zu-e7M">
-                                <rect key="frame" x="318" y="485" width="50" height="50"/>
-                                <state key="normal" image="unselectedStar"/>
-                                <connections>
-                                    <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B51-8u-79c"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YLF-nn-IXm">
+                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YLF-nn-IXm">
                                 <rect key="frame" x="371" y="485" width="50" height="50"/>
                                 <state key="normal" image="unselectedStar"/>
+                                <state key="selected" image="selectedStar"/>
                                 <connections>
                                     <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="huu-P2-T5L"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cv0-Rl-EgT">
+                            <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cv0-Rl-EgT">
                                 <rect key="frame" x="424" y="485" width="50" height="50"/>
                                 <state key="normal" image="unselectedStar"/>
+                                <state key="selected" image="selectedStar"/>
                                 <connections>
                                     <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vsx-Fr-7EL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pqi-QB-wyX">
+                            <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pqi-QB-wyX">
                                 <rect key="frame" x="477" y="485" width="50" height="50"/>
                                 <state key="normal" image="unselectedStar"/>
+                                <state key="selected" image="selectedStar"/>
                                 <connections>
                                     <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mey-Op-W1K"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qzn-4u-q02">
+                            <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qzn-4u-q02">
                                 <rect key="frame" x="530" y="485" width="50" height="50"/>
                                 <state key="normal" image="unselectedStar"/>
+                                <state key="selected" image="selectedStar"/>
                                 <connections>
                                     <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YcP-D5-i5t"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ia7-Xw-0wX">
-                                <rect key="frame" x="344" y="432" width="50" height="50"/>
-                                <state key="normal" image="unselectedStar"/>
-                                <connections>
-                                    <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="emZ-P2-Yk0"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TCC-DN-aXG">
-                                <rect key="frame" x="397" y="432" width="50" height="50"/>
-                                <state key="normal" image="unselectedStar"/>
-                                <connections>
-                                    <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lqr-fO-H58"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Bg-BP-QgK">
-                                <rect key="frame" x="450" y="432" width="50" height="50"/>
-                                <state key="normal" image="unselectedStar"/>
-                                <connections>
-                                    <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hbV-Bp-hIa"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKF-Gr-3Oy">
-                                <rect key="frame" x="503" y="432" width="50" height="50"/>
-                                <state key="normal" image="unselectedStar"/>
-                                <connections>
-                                    <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x8p-SS-App"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CkH-aP-ZEP">
-                                <rect key="frame" x="371" y="379" width="50" height="50"/>
-                                <state key="normal" image="unselectedStar"/>
-                                <connections>
-                                    <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oeI-qQ-wfV"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Dd-dG-iCI">
-                                <rect key="frame" x="424" y="379" width="50" height="50"/>
-                                <state key="normal" image="unselectedStar"/>
-                                <connections>
-                                    <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b0D-GJ-58B"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mrl-1H-Ok9">
-                                <rect key="frame" x="477" y="379" width="50" height="50"/>
-                                <state key="normal" image="unselectedStar"/>
-                                <connections>
-                                    <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WLx-zk-0Ao"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YKV-Pa-KlS">
-                                <rect key="frame" x="397" y="326" width="50" height="50"/>
-                                <state key="normal" image="unselectedStar"/>
-                                <connections>
-                                    <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dVD-Ya-gfJ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lBW-pB-1DC">
-                                <rect key="frame" x="450" y="326" width="50" height="50"/>
-                                <state key="normal" image="unselectedStar"/>
-                                <connections>
-                                    <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5om-BE-yxm"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k7s-hF-8Bu">
-                                <rect key="frame" x="424" y="273" width="50" height="50"/>
-                                <state key="normal" image="unselectedStar"/>
-                                <connections>
-                                    <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ofp-dY-Rn9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6P-Qs-4tX">
@@ -251,11 +183,100 @@
                                     <action selector="verifyButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yNN-6K-dlH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fM3-gQ-utT">
+                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fM3-gQ-utT">
                                 <rect key="frame" x="20" y="485" width="50" height="50"/>
                                 <state key="normal" image="unselectedStar"/>
+                                <state key="selected" image="selectedStar"/>
                                 <connections>
                                     <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Il-2f-4x2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sqc-Zu-e7M">
+                                <rect key="frame" x="318" y="485" width="50" height="50"/>
+                                <state key="normal" image="unselectedStar"/>
+                                <state key="selected" image="selectedStar"/>
+                                <connections>
+                                    <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B51-8u-79c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ia7-Xw-0wX">
+                                <rect key="frame" x="344" y="432" width="50" height="50"/>
+                                <state key="normal" image="unselectedStar"/>
+                                <state key="selected" image="selectedStar"/>
+                                <connections>
+                                    <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="emZ-P2-Yk0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TCC-DN-aXG">
+                                <rect key="frame" x="397" y="432" width="50" height="50"/>
+                                <state key="normal" image="unselectedStar"/>
+                                <state key="selected" image="selectedStar"/>
+                                <connections>
+                                    <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lqr-fO-H58"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Bg-BP-QgK">
+                                <rect key="frame" x="450" y="432" width="50" height="50"/>
+                                <state key="normal" image="unselectedStar"/>
+                                <state key="selected" image="selectedStar"/>
+                                <connections>
+                                    <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hbV-Bp-hIa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKF-Gr-3Oy">
+                                <rect key="frame" x="503" y="432" width="50" height="50"/>
+                                <state key="normal" image="unselectedStar"/>
+                                <state key="selected" image="selectedStar"/>
+                                <connections>
+                                    <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x8p-SS-App"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CkH-aP-ZEP">
+                                <rect key="frame" x="371" y="379" width="50" height="50"/>
+                                <state key="normal" image="unselectedStar"/>
+                                <state key="selected" image="selectedStar"/>
+                                <connections>
+                                    <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oeI-qQ-wfV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Dd-dG-iCI">
+                                <rect key="frame" x="424" y="379" width="50" height="50"/>
+                                <state key="normal" image="unselectedStar"/>
+                                <state key="selected" image="selectedStar"/>
+                                <connections>
+                                    <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b0D-GJ-58B"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mrl-1H-Ok9">
+                                <rect key="frame" x="477" y="379" width="50" height="50"/>
+                                <state key="normal" image="unselectedStar"/>
+                                <state key="selected" image="selectedStar"/>
+                                <connections>
+                                    <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WLx-zk-0Ao"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YKV-Pa-KlS">
+                                <rect key="frame" x="397" y="326" width="50" height="50"/>
+                                <state key="normal" image="unselectedStar"/>
+                                <state key="selected" image="selectedStar"/>
+                                <connections>
+                                    <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dVD-Ya-gfJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lBW-pB-1DC">
+                                <rect key="frame" x="450" y="326" width="50" height="50"/>
+                                <state key="normal" image="unselectedStar"/>
+                                <state key="selected" image="selectedStar"/>
+                                <connections>
+                                    <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5om-BE-yxm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k7s-hF-8Bu">
+                                <rect key="frame" x="424" y="273" width="50" height="50"/>
+                                <state key="normal" image="unselectedStar"/>
+                                <state key="selected" image="selectedStar"/>
+                                <connections>
+                                    <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ofp-dY-Rn9"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -345,6 +366,38 @@
                             <constraint firstItem="8Bg-BP-QgK" firstAttribute="leading" secondItem="TCC-DN-aXG" secondAttribute="trailing" constant="3" id="yrr-X1-hiV"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outletCollection property="latteButtonCollection" destination="PAT-GA-hEa" collectionClass="NSMutableArray" id="dDI-f0-lof"/>
+                        <outletCollection property="latteButtonCollection" destination="0fn-kc-Ibw" collectionClass="NSMutableArray" id="R9E-YB-WNH"/>
+                        <outletCollection property="latteButtonCollection" destination="pX9-NE-ZKV" collectionClass="NSMutableArray" id="Mc2-Bh-iCY"/>
+                        <outletCollection property="latteButtonCollection" destination="8JL-P2-lno" collectionClass="NSMutableArray" id="LKG-od-b1n"/>
+                        <outletCollection property="latteButtonCollection" destination="2fR-eQ-SDS" collectionClass="NSMutableArray" id="u0z-3S-kgY"/>
+                        <outletCollection property="latteButtonCollection" destination="lvN-pw-XKD" collectionClass="NSMutableArray" id="Rbv-bD-dG7"/>
+                        <outletCollection property="latteButtonCollection" destination="ZKU-Da-DOF" collectionClass="NSMutableArray" id="FV9-Lb-tJD"/>
+                        <outletCollection property="latteButtonCollection" destination="9C9-tH-4Mk" collectionClass="NSMutableArray" id="Spu-DW-Hwa"/>
+                        <outletCollection property="latteButtonCollection" destination="k0S-8Y-lrW" collectionClass="NSMutableArray" id="YJF-ZJ-MEF"/>
+                        <outletCollection property="latteButtonCollection" destination="fVu-RL-aJu" collectionClass="NSMutableArray" id="pVr-NS-a7t"/>
+                        <outletCollection property="latteButtonCollection" destination="fM3-gQ-utT" collectionClass="NSMutableArray" id="1E0-IO-RtX"/>
+                        <outletCollection property="latteButtonCollection" destination="Sqp-Ph-AaW" collectionClass="NSMutableArray" id="pk7-WT-eUL"/>
+                        <outletCollection property="latteButtonCollection" destination="aXy-a3-FkQ" collectionClass="NSMutableArray" id="WoB-rD-5uV"/>
+                        <outletCollection property="latteButtonCollection" destination="8pA-yz-xWe" collectionClass="NSMutableArray" id="u0m-4F-OsK"/>
+                        <outletCollection property="latteButtonCollection" destination="xAs-1h-r2D" collectionClass="NSMutableArray" id="QUm-DN-h5R"/>
+                        <outletCollection property="coffeeButtonCollection" destination="k7s-hF-8Bu" collectionClass="NSMutableArray" id="RP9-ms-Yfu"/>
+                        <outletCollection property="coffeeButtonCollection" destination="YKV-Pa-KlS" collectionClass="NSMutableArray" id="OLJ-Uh-yoI"/>
+                        <outletCollection property="coffeeButtonCollection" destination="lBW-pB-1DC" collectionClass="NSMutableArray" id="oDq-Ug-jgM"/>
+                        <outletCollection property="coffeeButtonCollection" destination="CkH-aP-ZEP" collectionClass="NSMutableArray" id="ExH-PL-UJM"/>
+                        <outletCollection property="coffeeButtonCollection" destination="8Dd-dG-iCI" collectionClass="NSMutableArray" id="hnu-pN-T8a"/>
+                        <outletCollection property="coffeeButtonCollection" destination="Mrl-1H-Ok9" collectionClass="NSMutableArray" id="PHd-wF-5iz"/>
+                        <outletCollection property="coffeeButtonCollection" destination="Ia7-Xw-0wX" collectionClass="NSMutableArray" id="eHO-nr-47I"/>
+                        <outletCollection property="coffeeButtonCollection" destination="TCC-DN-aXG" collectionClass="NSMutableArray" id="xUA-pO-z1Z"/>
+                        <outletCollection property="coffeeButtonCollection" destination="8Bg-BP-QgK" collectionClass="NSMutableArray" id="qaP-WK-rLV"/>
+                        <outletCollection property="coffeeButtonCollection" destination="bKF-Gr-3Oy" collectionClass="NSMutableArray" id="XC7-xC-E0j"/>
+                        <outletCollection property="coffeeButtonCollection" destination="Sqc-Zu-e7M" collectionClass="NSMutableArray" id="W1F-b9-iaQ"/>
+                        <outletCollection property="coffeeButtonCollection" destination="YLF-nn-IXm" collectionClass="NSMutableArray" id="7iM-Zd-R5Q"/>
+                        <outletCollection property="coffeeButtonCollection" destination="cv0-Rl-EgT" collectionClass="NSMutableArray" id="fGQ-2a-07j"/>
+                        <outletCollection property="coffeeButtonCollection" destination="pqi-QB-wyX" collectionClass="NSMutableArray" id="BoF-5D-myh"/>
+                        <outletCollection property="coffeeButtonCollection" destination="qzn-4u-q02" collectionClass="NSMutableArray" id="XSe-s6-OnA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
