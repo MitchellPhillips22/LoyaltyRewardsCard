@@ -31,13 +31,15 @@ class ViewController: UIViewController {
         canTapStars = false
         updateUI()
     }
-
+    
     @IBAction func redeemTapped(sender: UIButton) {
         latteStamps = 0
+        redeemOutlet.hidden = true
         updateUI()
     }
     @IBAction func redeemCoffeeTapped(sender: UIButton) {
         coffeeStamps = 0
+        redeemCoffee.hidden = true
         updateUI()
     }
     
@@ -51,7 +53,7 @@ class ViewController: UIViewController {
     @IBOutlet var coffeeButtonCollection: Array<UIButton>?
     
     var verificationCode = "4444"
- 
+    
     var latteStamps = 0
     
     var coffeeStamps = 0
@@ -74,34 +76,34 @@ class ViewController: UIViewController {
     
     func latteButtonTapped(sender:UIButton) {
         if canTapStars == true {
-        if sender.selected == true {
-            latteStamps = latteStamps - 1
-            sender.selected = false
-        } else {
-            latteStamps = latteStamps + 1
-            sender.selected = true
-        }
+            if sender.selected == true {
+                latteStamps = latteStamps - 1
+                sender.selected = false
+            } else {
+                latteStamps = latteStamps + 1
+                sender.selected = true
+            }
         }
         
         checkForRedeemable()
         
         print("stamps equals \(latteStamps)")
-
+        
     }
     
     func coffeeButtonTapped(sender:UIButton) {
         if canTapStars == true {
-        if sender.selected == true {
-            coffeeStamps = coffeeStamps - 1
-            sender.selected = false
-        } else {
-            coffeeStamps = coffeeStamps + 1
-            sender.selected = true
-        }
+            if sender.selected == true {
+                coffeeStamps = coffeeStamps - 1
+                sender.selected = false
+            } else {
+                coffeeStamps = coffeeStamps + 1
+                sender.selected = true
+            }
         }
         checkForRedeemableCoffee()
     }
-
+    
     //MARK: - Alert set up
     
     func showAlert() {
@@ -112,11 +114,11 @@ class ViewController: UIViewController {
             (verifyAction) -> Void in
             
             let textField = alertController.textFields?.first
-                // test for verification
+            // test for verification
             if textField!.text == self.verificationCode {
                 print("approved")
                 self.latteStamps = 0
-                self.coffeeStamps = 0 
+                self.coffeeStamps = 0
                 self.loadDefaults()
                 self.updateUI()
                 self.doneOutlet.hidden = false
@@ -158,14 +160,14 @@ class ViewController: UIViewController {
     }
     
     func updateUI() {
-    
+        
         for button in latteButtonCollection! {
             button.selected = false
             
             if button.tag <= latteStamps {
                 button.selected = true
             }
-
+            
         }
         for button in coffeeButtonCollection! {
             button.selected = false
@@ -173,7 +175,7 @@ class ViewController: UIViewController {
             if button.tag <= coffeeStamps {
                 button.selected = true
             }
-
+            
         }
         
     }
