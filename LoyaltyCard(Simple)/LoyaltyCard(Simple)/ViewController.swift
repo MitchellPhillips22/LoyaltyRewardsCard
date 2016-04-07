@@ -28,6 +28,7 @@ class ViewController: UIViewController {
         saveDefaults()
         doneOutlet.hidden = true
         editOutlet.hidden = false
+        canTapStars = false
         updateUI()
     }
 
@@ -55,6 +56,8 @@ class ViewController: UIViewController {
     
     var coffeeStamps = 0
     
+    var canTapStars: Bool = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -63,19 +66,21 @@ class ViewController: UIViewController {
         updateUI()
         
     }
+    // forces view to present in landscape only
     override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
         return .Landscape
     }
     //MARK: - Button functions
     
     func latteButtonTapped(sender:UIButton) {
-        
+        if canTapStars == true {
         if sender.selected == true {
             latteStamps = latteStamps - 1
             sender.selected = false
         } else {
             latteStamps = latteStamps + 1
             sender.selected = true
+        }
         }
         
         checkForRedeemable()
@@ -85,13 +90,14 @@ class ViewController: UIViewController {
     }
     
     func coffeeButtonTapped(sender:UIButton) {
-        
+        if canTapStars == true {
         if sender.selected == true {
             coffeeStamps = coffeeStamps - 1
             sender.selected = false
         } else {
             coffeeStamps = coffeeStamps + 1
             sender.selected = true
+        }
         }
         checkForRedeemableCoffee()
     }
@@ -113,19 +119,10 @@ class ViewController: UIViewController {
                 self.coffeeStamps = 0 
                 self.loadDefaults()
                 self.updateUI()
+                self.doneOutlet.hidden = false
+                self.editOutlet.hidden = true
+                self.canTapStars = true
                 
-                for button in self.latteButtonCollection! {
-                    
-//                  button.enabled = true
-                  self.doneOutlet.hidden = false
-                  self.editOutlet.hidden = true
-//                  self.latteButtonTapped(button)
-                
-                }
-                for button in self.coffeeButtonCollection! {
-                    
-//                    self.coffeeButtonTapped(button)
-                }
             } else {
                 // fails authorization
             }
@@ -168,7 +165,7 @@ class ViewController: UIViewController {
             if button.tag <= latteStamps {
                 button.selected = true
             }
-//            button.enabled = false
+
         }
         for button in coffeeButtonCollection! {
             button.selected = false
@@ -176,7 +173,7 @@ class ViewController: UIViewController {
             if button.tag <= coffeeStamps {
                 button.selected = true
             }
-//            button.enabled = false
+
         }
         
     }
