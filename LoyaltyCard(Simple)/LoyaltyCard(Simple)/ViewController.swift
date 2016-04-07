@@ -63,7 +63,9 @@ class ViewController: UIViewController {
         updateUI()
         
     }
-    
+    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+        return .Landscape
+    }
     //MARK: - Button functions
     
     func latteButtonTapped(sender:UIButton) {
@@ -114,13 +116,15 @@ class ViewController: UIViewController {
                 
                 for button in self.latteButtonCollection! {
                     
-                  button.enabled = true
+//                  button.enabled = true
                   self.doneOutlet.hidden = false
                   self.editOutlet.hidden = true
+//                  self.latteButtonTapped(button)
                 
                 }
                 for button in self.coffeeButtonCollection! {
-                    button.enabled = true
+                    
+//                    self.coffeeButtonTapped(button)
                 }
             } else {
                 // fails authorization
@@ -164,7 +168,7 @@ class ViewController: UIViewController {
             if button.tag <= latteStamps {
                 button.selected = true
             }
-            button.enabled = false
+//            button.enabled = false
         }
         for button in coffeeButtonCollection! {
             button.selected = false
@@ -172,7 +176,7 @@ class ViewController: UIViewController {
             if button.tag <= coffeeStamps {
                 button.selected = true
             }
-            button.enabled = false
+//            button.enabled = false
         }
         
     }
