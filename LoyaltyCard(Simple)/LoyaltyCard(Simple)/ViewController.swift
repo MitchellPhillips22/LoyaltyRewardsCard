@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import CoreData
 
 class ViewController: UIViewController {
     
@@ -28,19 +27,24 @@ class ViewController: UIViewController {
         saveDefaults()
         doneOutlet.hidden = true
         editOutlet.hidden = false
-        canTapStars = false
+        isAuthorized = false
         updateUI()
     }
     
     @IBAction func redeemTapped(sender: UIButton) {
+        if isAuthorized == true {
         latteStamps = 0
         redeemOutlet.hidden = true
         updateUI()
+        }
     }
     @IBAction func redeemCoffeeTapped(sender: UIButton) {
+        
+        if isAuthorized == true {
         coffeeStamps = 0
         redeemCoffee.hidden = true
         updateUI()
+        }
     }
     
     
@@ -58,7 +62,7 @@ class ViewController: UIViewController {
     
     var coffeeStamps = 0
     
-    var canTapStars: Bool = false
+    var isAuthorized: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -75,7 +79,7 @@ class ViewController: UIViewController {
     //MARK: - Button functions
     
     func latteButtonTapped(sender:UIButton) {
-        if canTapStars == true {
+        if isAuthorized == true {
             if sender.selected == true {
                 latteStamps = latteStamps - 1
                 sender.selected = false
@@ -92,7 +96,7 @@ class ViewController: UIViewController {
     }
     
     func coffeeButtonTapped(sender:UIButton) {
-        if canTapStars == true {
+        if isAuthorized == true {
             if sender.selected == true {
                 coffeeStamps = coffeeStamps - 1
                 sender.selected = false
@@ -123,7 +127,7 @@ class ViewController: UIViewController {
                 self.updateUI()
                 self.doneOutlet.hidden = false
                 self.editOutlet.hidden = true
-                self.canTapStars = true
+                self.isAuthorized = true
                 
             } else {
                 // fails authorization
